@@ -1,3 +1,3 @@
-# bookdown 中文范例
+# bookdown 图表设置中英文双标题
 
-这是一个简单的用 **bookdown** 写中文书的例子。在使用它之前，建议您至少泛读一遍 [**bookdown** 官方文档](https://bookdown.org/yihui/bookdown)。
+一般的学位论文以及较为核心的中文期刊中，需要给图形或表格等浮动对象加上双语说明。这是一个简单的用 **bookdown** 写的例子。该文档修改自 bookdown 的[官方中文模板](https://github.com/yihui/bookdown-chinese)。
