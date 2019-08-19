@@ -21,10 +21,12 @@ github-repo: yihui/bookdown-chinese
       if(is_latex_output()){
         knit_hooks$set(plot = function(x, options) {
           if(!is.null(options$bicap)){
+            first_caption = options$fig.cap
             options$fig.cap = NULL
             paste("\\begin{figure}[!htp]",
                   hook_plot_tex(x, options), 
-                  "\\bicaption{", options$bicap[1], "}{",options$bicap[2],"}", 
+                  "\\bicaption{", first_caption, "}{",options$bicap,"}", 
+                  "\\label{", "fig:", options$label, "}", 
                   "\\end{figure}", sep = "")
           }  else{
             hook_plot_tex(x, options)
